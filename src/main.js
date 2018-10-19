@@ -1,8 +1,8 @@
 import Vue from "vue";
-import App from "./App.vue";
+import App from "./app";
 import router from "./router";
 import store from "./store";
-import "./registerServiceWorker";
+import "./register-service-worker";
 import Icon from "@/components/icon";
 
 Vue.component("icon", Icon);

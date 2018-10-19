@@ -3,8 +3,9 @@ import App from "./app";
 import router from "./router";
 import store from "./store";
 import "./register-service-worker";
-import Icon from "./components/icon";
 import "./utils/vconsole";
+import "./assets/styles/index.styl";
+import Icon from "./components/icon";
 
 Vue.component("icon", Icon);
 

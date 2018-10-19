@@ -38,6 +38,12 @@ module.exports = {
     ["vue-modules", "vue", "normal-modules", "normal"].forEach(type =>
       addStyleResource(config.module.rule("stylus").oneOf(type))
     );
+
+    if (process.env.npm_config_report) {
+      config
+        .plugin("webpack-bundle-analyzer")
+        .use(require("webpack-bundle-analyzer").BundleAnalyzerPlugin);
+    }
   },
 
   configureWebpack: {

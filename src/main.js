@@ -7,6 +7,8 @@ import Icon from "@/components/icon";
 
 Vue.component("icon", Icon);
 
+console.log(process.env.VUE_APP_SECRET);
+
 Vue.config.productionTip = false;
 
 new Vue({

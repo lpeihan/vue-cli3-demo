@@ -26,3 +26,10 @@ export default {
   }
 };
 </script>
+
+<style lang="stylus" scoped>
+.icon
+  display: inline-block
+  size: 1em
+  fill: currentColor
+</style>

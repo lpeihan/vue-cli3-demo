@@ -3,11 +3,10 @@ import App from "./app";
 import router from "./router";
 import store from "./store";
 import "./register-service-worker";
-import Icon from "@/components/icon";
+import Icon from "./components/icon";
+import "./utils/vconsole";
 
 Vue.component("icon", Icon);
-
-console.log(process.env.VUE_APP_SECRET);
 
 Vue.config.productionTip = false;
 

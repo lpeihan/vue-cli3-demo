@@ -9,7 +9,10 @@ function addStyleResource(rule) {
     .use("style-resource")
     .loader("style-resources-loader")
     .options({
-      patterns: [resolve("src/assets/styles/variables.styl")]
+      patterns: [
+        resolve("src/assets/styles/variables.styl"),
+        resolve("src/assets/styles/mixins.styl")
+      ]
     });
 }
 

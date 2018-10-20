@@ -2,6 +2,7 @@
   <div class="home">
     <router-link to="/about">about</router-link>
     <icon name="logout" />
+    {{Date.now() | date}}
   </div>
 </template>
 

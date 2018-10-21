@@ -1,5 +1,7 @@
-/*
+/**
  * debounce
+ * @param {function} fn
+ * @param {number} delay 毫秒
  */
 export function debounce(fn, delay) {
   let timer;
@@ -22,8 +24,10 @@ export function debounce(fn, delay) {
   };
 }
 
-/*
+/**
  * throttle
+ * @param {function} fn
+ * @param {number} delay 毫秒
  */
 export function throttle(fn, delay) {
   let ctx;

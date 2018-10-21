@@ -4,7 +4,7 @@ import Home from "@/views/home/home";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
@@ -16,7 +16,16 @@ export default new Router({
     {
       path: "/about",
       name: "about",
+      meta: {
+        auth: false
+      },
       component: () => import("@/views/about/about")
     }
   ]
 });
+
+router.beforeEach((to, from, next) => {
+  next();
+});
+
+export default router;

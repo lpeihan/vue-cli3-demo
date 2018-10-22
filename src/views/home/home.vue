@@ -1,21 +1,25 @@
 <template>
   <div class="home">
-    <router-link to="/about">about</router-link>
-    <icon name="logout" />
-    {{Date.now() | date}}
-    <mt-button>mint-button</mt-button>
+    <mt-button @click="go">
+      <icon name="logout" />about</mt-button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "home"
+  name: "home",
+  methods: {
+    go() {
+      this.$router.push({
+        path: "/about"
+      });
+    }
+  }
 };
 </script>
 
 <style lang="stylus" scoped>
 .home
   .icon-logout
-    size: 28px
-    color: red
+    size: 24px
 </style>

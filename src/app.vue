@@ -15,8 +15,8 @@ export default {
   },
   watch: {
     $route(to, from) {
-      const toDepth = to.path.split("/").length;
-      const fromDepth = from.path.split("/").length;
+      const toDepth = to.path.split("/").filter(item => item).length;
+      const fromDepth = from.path.split("/").filter(item => item).length;
 
       this.transitionName =
         toDepth < fromDepth ? "slider-right" : "slider-left";

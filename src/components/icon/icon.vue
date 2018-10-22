@@ -1,14 +1,15 @@
 <template>
-    <svg class="icon"
-         :class="'icon-' + name">
-        <use :xlink:href="'#' + name"></use>
-    </svg>
+  <svg class="icon"
+       :class="'icon-' + name">
+    <use :xlink:href="'#' + name"></use>
+  </svg>
 </template>
 
 <script>
 import icons from "@/assets/icons";
 
 export default {
+  name: "icon",
   props: {
     name: {
       type: String,

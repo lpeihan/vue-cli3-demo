@@ -1,5 +1,5 @@
 /**
- * debounce
+ * debounce 防抖
  * @param {function} fn
  * @param {number} delay 毫秒
  */
@@ -25,7 +25,7 @@ export function debounce(fn, delay) {
 }
 
 /**
- * throttle
+ * throttle 节流
  * @param {function} fn
  * @param {number} delay 毫秒
  */

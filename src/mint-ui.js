@@ -1,4 +1,5 @@
-import "mint-ui/lib/style.css";
+import "mint-ui/lib/button/style.css";
+
 import { Button } from "mint-ui";
 
 export default {

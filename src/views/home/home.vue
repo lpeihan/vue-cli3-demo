@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <mt-button @click="go">
-      <icon name="logout" />about</mt-button>
+      <icon name="logout" />about
+    </mt-button>
   </div>
 </template>
 
@@ -22,4 +23,9 @@ export default {
 .home
   .icon-logout
     size: 24px
+
+  .navbar
+    height: 50px
+    line-height: 50px
+    background: gray
 </style>

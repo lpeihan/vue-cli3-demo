@@ -8,10 +8,12 @@ import "./assets/styles/index.styl"; // 引入全局 styles
 import fastclick from "fastclick"; // 解决移动端 300ms 延迟
 
 import filters from "./utils/filters";
+import directives from "./utils/directives";
 import mintUi from "./mint-ui";
 import icon from "./components/icon";
 
 Vue.use(filters);
+Vue.use(directives);
 Vue.use(mintUi);
 Vue.use(icon);
 

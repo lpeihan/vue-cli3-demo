@@ -9,6 +9,12 @@
 <script>
 export default {
   name: "toast",
+  props: {
+    message: {
+      type: String,
+      default: ""
+    }
+  },
   data() {
     return {
       show: false

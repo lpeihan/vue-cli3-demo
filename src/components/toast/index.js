@@ -15,7 +15,7 @@ ToastConstructor.prototype.close = function() {
 
 const Toast = ({ message = "", duration = 3000 }) => {
   const instance = new ToastConstructor({
-    data: {
+    propsData: {
       message
     }
   }).$mount();

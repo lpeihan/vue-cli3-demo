@@ -8,7 +8,7 @@ import getters from "./getters";
 import mutations from "./mutations";
 import actions from "./actions";
 
-import about from "./modules/about";
+import modules from "./modules";
 
 Vue.use(Vuex);
 
@@ -17,9 +17,7 @@ export default new Vuex.Store({
   getters,
   mutations,
   actions,
-  modules: {
-    about
-  },
+  modules,
 
   plugins: process.env.NODE_ENV === "development" ? [createLogger()] : []
 });

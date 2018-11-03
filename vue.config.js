@@ -45,6 +45,17 @@ module.exports = {
         .plugin("webpack-bundle-analyzer")
         .use(require("webpack-bundle-analyzer").BundleAnalyzerPlugin);
     }
+
+    config.plugin("define").tap(args => {
+      args[0] = {
+        "process.env":
+          process.env.NODE_ENV === "production"
+            ? require("./.env.prod.js")
+            : require("./.env.dev.js")
+      };
+
+      return args;
+    });
   },
 
   configureWebpack: {

@@ -1,6 +1,7 @@
 <template>
   <transition>
-    <div class="toast" v-show="show">
+    <div class="toast"
+         v-show="show">
       {{ message }}
     </div>
   </transition>

@@ -12,7 +12,7 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        singleQuote: true
+        singleQuote: false
       }
     ],
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",

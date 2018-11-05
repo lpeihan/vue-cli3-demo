@@ -7,8 +7,9 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint"
   },
-  // "off": 0 "warn": 1 "error": 2
+  // 具体文档请看 https://eslint.org/docs/rules/ "off": 0 "warn": 1 "error": 2
   rules: {
+    semi: [2, "always"],
     "prettier/prettier": [
       "error",
       {

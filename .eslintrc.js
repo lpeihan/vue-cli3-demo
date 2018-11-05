@@ -7,7 +7,9 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint"
   },
-  // 具体文档请看 https://eslint.org/docs/rules/ "off": 0 "warn": 1 "error": 2
+  // eslint https://eslint.org/docs/rules/
+  // prettier https://prettier.io/docs/en/options.html
+  // "off": 0 "warn": 1 "error": 2
   rules: {
     semi: [2, "always"],
     "prettier/prettier": [
